@@ -36,16 +36,45 @@ From dynamic menus to automated deployment pipelines, this project blends softwa
 ## 📂 Project Structure
 
 chefOps/
-├── models/ # Mongoose schemas
-├── public/ # Static assets (CSS, JS, images)
-├── views/ # HTML frontend templates
-├── ansible/ # Ansible playbooks for provisioning
-├── k8s/ # Kubernetes deployment files
-├── Jenkinsfile # CI/CD pipeline definition
-├── Dockerfile # Backend container build
-├── docker-compose.yml # Local development stack
-├── server.js # Express app
-└── README.md
+├── ansible/                     # Ansible provisioning
+│   ├── inventory.ini
+│   └── playbook.yml
+│
+├── k8s/                         # Kubernetes manifests
+│   ├── backend-deployment.yaml
+│   ├── backend-service.yaml
+│   ├── mongo-deployment.yaml
+│   └── mongo-service.yaml
+│
+├── models/                      # Mongoose schemas
+│   └── MenuItem.js
+│
+├── public/                      # Frontend static assets
+│   ├── css/
+│   │   └── styles.css
+│   ├── js/
+│   │   └── main.js
+│   └── images/
+│       ├── bruschetta.jpg
+│       ├── grilled-salmon.jpg
+│       ├── cheesecake.jpg
+│       └── ...
+│
+├── views/                       # HTML templates
+│   ├── index.html
+│   ├── menu.html
+│   └── contact.html
+│
+├── .dockerignore
+├── .gitignore
+├── Dockerfile                   # Build backend container
+├── docker-compose.yml           # Local dev environment
+├── Jenkinsfile                  # Jenkins pipeline
+├── package.json
+├── package-lock.json
+├── README.md
+├── seed.js                      # Seed script for MongoDB
+└── server.js                    # Express app entry point
 
 ---
 
