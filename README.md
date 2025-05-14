@@ -1,87 +1,102 @@
-# Task Management API
+# 🍽️ chefOps
 
-## 📌 Project Overview
-This is a simple **Task Management API** built with **Node.js, Express, and MongoDB**. The API allows users to create, retrieve, update, and delete tasks while managing users.
-
-## 🚀 Features
-- **Create a new task** 📌
-- **Retrieve all tasks** 📂
-- **Retrieve a specific task by ID** 🔍
-- **Update a task** ✏️
-- **Delete a task** ❌
-- **User authentication & management** 👤
-
-## 📁 Project Structure
-```
-📂 project-folder/
-├── 📂 models/            # Mongoose schemas
-│   ├── Task.js
-│   ├── User.js
-│
-├── 📂 routes/            # API routes
-│   ├── taskRoutes.js
-│
-├── 📂 controllers/       # Business logic for routes
-│   ├── taskController.js
-│
-├── server.js            # Main server entry point
-├── .env.example         # Example environment variables
-├── package.json         # Dependencies & scripts
-└── README.md            # Documentation
-```
+**chefOps** is a full-stack restaurant web application built with modern web technologies and DevOps practices.  
+From dynamic menus to automated deployment pipelines, this project blends software craftsmanship with culinary flair.
 
 ---
 
-## 🛠️ Setup & Installation
-### 1️⃣ Clone the Repository
-```sh
-cd Final project
-```
+## 🔧 Tech Stack
 
-### 2️⃣ Install Dependencies
-```sh
+### 🖥️ Backend
+- **Node.js + Express** – Web server and API
+- **MongoDB + Mongoose** – NoSQL database for dynamic content
+
+### 🎨 Frontend
+- **HTML, CSS, JavaScript** – Responsive and clean UI (no frontend frameworks)
+
+### 🚀 DevOps & Infrastructure
+- **Docker** – Containerized application
+- **Kubernetes** – Orchestration and deployment
+- **Ansible** – Infrastructure provisioning and configuration
+- **Jenkins** – CI/CD pipeline automation
+
+---
+
+## 🌐 Features
+
+- 📄 Fully dynamic menu rendered from MongoDB using Mongoose
+- 📨 Contact form with server-side handling
+- 📦 Dockerized architecture for consistent deployment
+- ☸️ Kubernetes manifests for scalable production rollout
+- 🤖 Jenkins pipeline with integrated CI/CD
+- 🧾 Ansible playbooks to spin up infrastructure environments
+
+---
+
+## 📂 Project Structure
+
+chefOps/
+├── models/ # Mongoose schemas
+├── public/ # Static assets (CSS, JS, images)
+├── views/ # HTML frontend templates
+├── ansible/ # Ansible playbooks for provisioning
+├── k8s/ # Kubernetes deployment files
+├── Jenkinsfile # CI/CD pipeline definition
+├── Dockerfile # Backend container build
+├── docker-compose.yml # Local development stack
+├── server.js # Express app
+└── README.md
+
+---
+
+## 🧪 Running Locally
+
+### 1. Clone and install:
+```bash
+git clone https://github.com/your-username/chefOps.git
+cd chefOps
 npm install
+````
+
+### 2. Start MongoDB locally or via Docker
+
+### 3. Run the server:
+
+```bash
+node server.js
 ```
 
-### 3️⃣ Configure Environment Variables
-Create a `.env` file in the root directory and set up the following variables:
-```
-DB_URL=mongodb+srv://your-mongo-uri
-```
-
-### 4️⃣ Start the Server
-```sh
-npm run dev
-```
-
-> The API will run on **http://localhost:3000**
+Open your browser at [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 📌 API Endpoints
-### Task Endpoints
-| Method | Endpoint           | Description                 |
-|--------|-------------------|-----------------------------|
-| **GET** | `/api/tasks`       | Retrieve all tasks         |
-| **GET** | `/api/tasks/:id`   | Retrieve a specific task   |
-| **POST** | `/api/tasks`      | Create a new task          |
-| **PUT** | `/api/tasks/:id`   | Update a task              |
-| **DELETE** | `/api/tasks/:id` | Delete a task              |
+## 🐳 Run with Docker
 
-### Example Task Creation Request
-```json
-POST /api/tasks
-{
-  "title": "Complete the report",
-  "description": "Submit the monthly report",
-  "status": "in-progress",
-  "priority": "high",
-  "dueDate": "2025-04-01",
-  "category": "work"
-}
+```bash
+docker build -t chefops-app .
+docker-compose up
 ```
+
+---
+
+## ☸️ Deploy to Kubernetes
+
+```bash
+kubectl apply -f k8s/
+```
+
+---
+
+## 🤖 Jenkins Pipeline
+
+* Defined in `Jenkinsfile`
+* Includes build, Docker push, and deploy to Kubernetes cluster
+
 ---
 
 
 ## 📜 License
-This project is open-source and available under the **MIT License**.
+
+MIT License © 2025 Your Name
+
+---
