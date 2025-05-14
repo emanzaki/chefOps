@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home | Bistro Delight</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    .hero {
+      background: url('/images/hero.jpg') center/cover no-repeat;
+      color: rgb(16, 20, 82);
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .about {
+      background-color: #fff;
+      padding: 40px 20px;
+      border-radius: 8px;
+      margin-bottom: 40px;
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+
+    .feature-box {
+      background-color: #f9f6ff;
+      flex: 1;
+      min-width: 250px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .feature-box h3 {
+      color: #0a4f80;
+      margin-bottom: 10px;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 30px;
+      background-color: #e8f0fa;
+      border-radius: 10px;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #0a4f80;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .cta a:hover {
+      background-color: #250f43;
+    }
+
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+      }
+
+      .hero h2 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bistro Delight</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/menu">Menu</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Bistro Delight</h2>
+    <p>Fine Dining. Cozy Ambiance. Unforgettable Taste.</p>
+  </section>
+
+  <div class="container">
+    <section class="about">
+      <h2>About Us</h2>
+      <p>
+        At Bistro Delight, we bring the best of international cuisine to your plate, made with love and local ingredients. Whether you're here for a romantic dinner, a family celebration, or a casual lunch — we’re here to make your experience deliciously memorable.
+      </p>
+    </section>
+
+    <section class="features">
+      <div class="feature-box">
+        <h3>Signature Dishes</h3>
+        <p>Our chef’s handpicked specials crafted with seasonal ingredients and bold flavors.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Elegant Ambiance</h3>
+        <p>Enjoy your meal in a warm, rustic setting with ambient lighting and soft music.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Fresh Ingredients</h3>
+        <p>We source fresh produce daily from local markets to ensure every bite delights.</p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Hungry Yet?</h2>
+      <p>Explore our full menu and discover your next favorite dish.</p>
+      <a href="/menu">View Menu</a>
+    </section>
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
