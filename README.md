@@ -35,6 +35,7 @@ From dynamic menus to automated deployment pipelines, this project blends softwa
 
 ## 📂 Project Structure
 
+```bash
 chefOps/
 ├── ansible/                     # Ansible provisioning
 │   ├── inventory.ini
@@ -75,7 +76,7 @@ chefOps/
 ├── README.md
 ├── seed.js                      # Seed script for MongoDB
 └── server.js                    # Express app entry point
-
+```
 ---
 
 ## 🧪 Running Locally
